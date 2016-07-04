@@ -32,7 +32,7 @@ def opt_1(size, path):
             near_i1 = sorted(list(range(size)), key=lambda x: dist[path[i1]][x])[1:top_nearest]
             both_near = set(near_i).intersection(near_i1)
             for city in both_near:
-                if city==i or city==i1:
+                if path.index(city)==i or path.index(city)==i1:
                     continue
                 j = path.index(city)
                 j0 = j-1
@@ -194,5 +194,3 @@ if __name__ == '__main__':
     solution2, total = opt_3(len(solution1), solution1)
     solution3, total1 = opt_1(len(solution2), solution2)
     print_solution(solution3)
-
-
