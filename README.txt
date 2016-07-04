@@ -19,3 +19,15 @@ Reference:
 I got hint form this website: http://www.geocities.jp/m_hiroi/light/pyalgo62.html
 
 I hope this website could be helpful to you as well:)
+
+#7/4 追加:
+ver4_give_best_anser_to_input_3.py gives best answer for input_3(just like its name)
+I initially wanted to combine opt1 and opt3 into one function to save calculation time(which is how def opt1 works in this code). I coincidently found that this code gives best answer for input_3.csv and input_6.csv.
+The score for input_6.csv is 40939.337940293706
+However, the execution time for input_6.csv is like:
+
+real	46m30.051s
+user	45m13.075s
+sys	0m18.036s
+
+It is so costly:(
